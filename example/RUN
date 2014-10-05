@@ -1,0 +1,2 @@
+./bin/flume-ng  agent --conf conf --conf-file /path/to/main.conf --name agent -Dlog4j.debug=false -Dlog4j.configuration=file:///path/to/main_log4j.properties
+./bin/flume-ng  agent --conf conf --conf-file /path/to/sub.conf --name agent -Dlog4j.debug=false -Dlog4j.configuration=file:///path/to/sub_log4j.properties
