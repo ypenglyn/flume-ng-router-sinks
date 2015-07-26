@@ -8,12 +8,12 @@ Extends flume-ng sinks to router-like sinks, which can route events according to
 
 Compatible with flume 1.4.0, 1.5.0, 1.5.0.1.
 
-Why router sinks?
+Why router sinks
 ----
 
 [Flume Channel Selectors](<http://flume.apache.org/FlumeUserGuide.html#flume-channel-selectors>) has already provided such router-like function. Why do we need such function on sink?
 
-In our circumstance, we need to create flat structure for implementing events separating function as soon as events ingested to flume sources. If we use channel selector to do that, our flume topology would be constricted into limited servers. For example, event has two type of headers as below:
+In our circumstance, we need to create flat structure for implementing events separating function as soon as events ingested to flume sources. If we use channel selector only, the flume topology would be constricted into limited servers. For example, event has two type of headers as below:
 
 Header   | Value
 -------- | ---
